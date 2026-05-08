@@ -1,11 +1,6 @@
 import pandas as pd
 
-def load_data(ratings_path="dataset/ratings.csv",
-              movies_path="dataset/movies.csv"):
-    """
-    Load MovieLens ratings and movie metadata.
-    """
-
+def load_data(ratings_path="dataset/ratings.csv", movies_path="dataset/movies.csv"):
     ratings = pd.read_csv(ratings_path)
     movies = pd.read_csv(movies_path)
 
@@ -13,10 +8,7 @@ def load_data(ratings_path="dataset/ratings.csv",
 
 
 def leave_one_out_split(ratings_df, random_state=42):
-    """
-    Leave-one-out split:
-    Reserve one interaction per user for testing.
-    """
+    """Reserve one interaction per user for testing."""
 
     shuffled = ratings_df.sample(frac=1, random_state=random_state)
 
