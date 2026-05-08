@@ -31,7 +31,7 @@ The MovieLens dataset was used to evaluate the recommenders and can be downloade
 Upon arrival to the main MovieLens page:
 - Download the dataset the zip file titled "ml-latest-small.zip"
 - Extract the dataset from the zip and rename to "dataset"
-- Place the "dataset" file in project root as diagramed above
+- Place the "dataset" file in project root as diagrammed above
 
 # Environment Setup
 
